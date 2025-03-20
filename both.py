@@ -32,7 +32,7 @@ SCOPES = ['https://www.googleapis.com/auth/drive.file']
 def authenticate_drive():
     creds = None
     flow = InstalledAppFlow.from_client_config(GOOGLE_DRIVE_CREDENTIALS, SCOPES)
-    creds = flow.run_console()
+    creds = flow.run_local_server(port=0, open_browser=False)
 
     return creds
 
