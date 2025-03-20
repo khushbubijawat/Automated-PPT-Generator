@@ -224,8 +224,13 @@ option = st.radio("Select:", ["Create New PPT", "Append to Existing PPT"])
 title = st.text_input("Slide Title:")
 description = st.text_area("Slide Description:")
 
-img1 = st.file_uploader("📷 Capture or select first image", type=["png", "jpg", "jpeg"])
-img2 = st.file_uploader("📷 Capture or select second image", type=["png", "jpg", "jpeg"])
+# img1 = st.file_uploader("📷 Capture or select first image", type=["png", "jpg", "jpeg"])
+# img2 = st.file_uploader("📷 Capture or select second image", type=["png", "jpg", "jpeg"])
+
+img1 = st.file_uploader("📸 Capture or select first image", type=["png", "jpg", "jpeg"], accept_multiple_files=False)
+img2 = st.file_uploader("📸 Capture or select second image", type=["png", "jpg", "jpeg"], accept_multiple_files=False)
+
+
 
 if st.button("✨ Generate PPT & Send via WhatsApp"):
     if not (title and description and img1 and img2):
