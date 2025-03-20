@@ -129,7 +129,7 @@ RECIPIENT_PHONE_NUMBER = os.getenv('RECIPIENT_PHONE_NUMBER')
 
 # Google Drive Configuration
 SCOPES = ['https://www.googleapis.com/auth/drive.file']
-CREDENTIALS_FILE = 'credentials.json'
+CREDENTIALS_FILE = 'C:\\Users\\ii207\\Desktop\\on2cook_ppt\\whatsup_ppt_agent\\client_secret_47.com.json'
 PPT_FILE_PATH = "generated_presentation.pptx"
 
 # Authenticate with Google Drive
